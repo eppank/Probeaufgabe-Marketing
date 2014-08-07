@@ -7,6 +7,7 @@
 		<meta charset="utf-8" />
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="simplegrid.css" />
+		<script type="text/javascript" src="js/kontakt.js"></script>
 	</head>
 
 	<body>
@@ -69,11 +70,16 @@
 
 
 		<!-- Formular -->
-		<div class="grid grid-pad">
-			<div class="col-1-1">
-				<div class="content">
+		<div class="footer">
+			<div class="kontaktform">
+				<form name="kontaktformular" method="post" onsubmit="return sendmail()">
+					<input name="name" type="text" placeholder="Vorname und Name"><br>
+					<input name="email" type="email" placeholder="E-Mailadresse"><br>
+					<input name="betreff" type="text" placeholder="Betreff"><br>
+					<textarea name="nachricht" rows="5" placeholder="Nachricht"></textarea><br>
+					<input type="submit" value="Absenden">					
+				</form>
 				<a name="kontakt"></a>
-				</div>
 			</div>
 		</div>
 
